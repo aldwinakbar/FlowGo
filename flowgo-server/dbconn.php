@@ -34,14 +34,14 @@ function updateDataFlow($id_dev, $flow_dev, $batt_dev){
 	$row = mysqli_fetch_array($res);
 	
 	$res2 = $row["id"];
-	echo $res2;
+	//echo $res2;
 	
 	$command = "";
 
 
 	//jika udah ada, update aja
 	if(!is_null($res2)){
-		echo "id sudah ada<br>";
+		//echo "id sudah ada<br>";
 		$command = "UPDATE dataflow SET flow='$new_flow', batt='$batt_dev', time='$time_dev' WHERE id='$id_dev' ";
 		echo "success";
 	} 
@@ -67,10 +67,10 @@ function showDataFlow(){
 	echo "
 	<table style='width:100%'>
 	<tr>	
-		<td><b>ID Alat</b></td>
-		<td><b>Keterangan Alat</b></td>
-		<td><b>Volume yang dideteksi</b></td>
-		<td><b>Status baterai alat</b></td>
+		<td><b>ID Device</b></td>
+		<td><b>Keterangan Device</b></td>
+		<td><b>Volume Yang Dideteksi</b></td>
+		<td><b>Status Baterai Alat</b></td>
 		<td><b>Timestamp</b></td>
 		
 	</tr>";
@@ -95,7 +95,7 @@ function showDataFlow(){
 
 }
 
-function addAlat($id_dev, $name_dev){
+function addAlat($id_dev, $name_dev, $gol){
 	//konek dulu ke db
 	$connect = init_db();
 
@@ -105,7 +105,7 @@ function addAlat($id_dev, $name_dev){
 	$row = mysqli_fetch_array($res);
 	
 	$res2 = $row["id"];
-	echo $res2;
+	//echo $res2;
 	
 	$command = "";
 
@@ -115,8 +115,8 @@ function addAlat($id_dev, $name_dev){
 	} 
 	//belum ada, bikin baru
 	else{
-		echo "id belum ada";
-		$command = "INSERT INTO dataflow (id, name, flow, batt, time) values('$id_dev', '$name_dev', '', '', '$time_dev')"; 
+		//echo "id belum ada";
+		$command = "INSERT INTO dataflow (id, name, flow, batt, time, gol) values('$id_dev', '$name_dev', '', '', '$time_dev', '$gol')"; 
 	}
 
 	//kirim
@@ -134,7 +134,7 @@ function deleteAlat($id_dev){
 	$row = mysqli_fetch_array($res);
 	
 	$res2 = $row["id"];
-	echo $res2;
+	//echo $res2;
 	
 	$command = "";
 
@@ -162,8 +162,8 @@ function showDeviceList(){
 	echo "
 	<table style='width:100%'>
 	<tr>	
-		<td><b>ID Alat</b></td>
-		<td><b>Keterangan Alat</b></td>		
+		<td><b>ID Device</b></td>
+		<td><b>Keterangan Device</b></td>		
 	</tr>";
 
 	if($res->num_rows > 0){

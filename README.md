@@ -1,20 +1,24 @@
 # FlowGo
+How much do you use water daily?
+How much does this city (jakarta) use daily?
+What is the proportion of water usage from different sources that is ground-water and PDAM?
 
-How much water do you use everyday? Do you keep track on your water usage?
-Keeping track of water usage is an important thing. But in today's world with much going on and your boss probably on the phone right now, people see that simply looking at the water meter outside and puting on a note is hindrance. Why can't we just have a personal water monitor that tells us how much we use anytime we want to know anywhere we are? Well with using IOT technology, that my friend is no longer a dream.
+We propose the FlowGo, a simple 8-bit microcontroller that is connected to the internet through a GSM module and monitors volume of consumed water through a flow sensor. The FlowGo is both reliable and sustainable because it  uses a  microhydro generator to charge its batteries.
 
-Keep your household budget under control while still focusing on daily activities without going through that pain with a simple device that is 
+On the server side, each and every FlowGo will post data of volume consumed and battery every time sample. The consumed water will be summed at the server-end.
 
-| Self powered | Self rechargeable | Reliable for monitoring your water usage 24/7 |
+FlowGo will benefit personally through the android app that monitors personal consumption as well as due date to pay if the user uses PDAM.
 
-
-Its a microcontroller driven water flow sensor that is powered by battery. The battery its self is charged when water flows through it via a micro-hydro generator.
-
-With this, you can find out how much you will be charge for water this month, even though you're on a business trip to France. The device will simply let you know via text message when you ask. 
-
+On the large scale, FlowGo will benefit government institutions, bussinesses as well as anyone interested in hydrogeological subjects. With te collective data, trends of consumption can be studied and relevant actions can be taken for the greater good. 
 
 Parts Needed :
 
 | Microcontroller working in 3.3V | Micro-hydro Generator | Water Flow Sensor G1/2 | GSM Module |
 
 We are T-Bot-PRJ consisting of 5 people who want to make a difference in the country and the world.
+
+
+Folder directory:
+/flowgo-arduino			: Source code for the arduino.
+/FlowGo				: Source code for the android app
+/flowgo-server		: Source code for the server

@@ -18,11 +18,11 @@
 <tr>
 <td>
 <b>Tambah Device<br></b>
-ID Devcie: 
+ID Device: 
 <br><input type="text" name="id_dev_add"><br>
 Keterangan Alat : 
 <br><textarea name="name_dev" rows="4" cols="50"></textarea> <br>
-<button type="submit" name="add">Tambahkan Alat</button><br>
+<button type="submit" name="add">Tambahkan Device</button><br>
 
 </td>
 
@@ -30,7 +30,7 @@ Keterangan Alat :
 <b>Hapus Device<br></b>
 User ID : 
 <br><input type="text" name="id_dev_del"><br>
-<button type="submit" name="del">Hapus Alat</button><br>
+<button type="submit" name="del">Hapus Device</button><br>
 </td>
 
 </form>
@@ -41,6 +41,7 @@ User ID :
 
 <?php
 	include 'dbconn.php';
+	include 'mtekaldwin.php';
 
 	echo "<br>";
 
@@ -50,22 +51,28 @@ User ID :
 
 
 	if(isset($_POST["add"])){
-		echo "add";
+		echo "add <br>";
 		$id_in = $_POST['id_dev_add'];
 		$name_in = $_POST['name_dev'];
-		addAlat($id_in, $name_in);
-		echo "add berhasil";
+
+		$gollib = lib();
+		$gol = json_decode($gollib[0]['class']);
+
+		echo $gol;
+
+		addAlat($id_in, $name_in,$gol);
+		//echo "add berhasil";
 
 	}
 
 	if(isset($_POST["del"])){
-		echo "delete";
+		echo "delete <br>";
 		$id_del = $_POST['id_dev_del'];
 		deleteAlat($id_del);
-		echo "delete berhasil";
+		//echo "delete berhasil";
 	}
 
-	echo "<h4>List alat yang terpasang</h4>";
+	echo "<h4>List device yang terpasang</h4>";
 	echo "<center>";
 	showDeviceList();
 	echo "</center>";

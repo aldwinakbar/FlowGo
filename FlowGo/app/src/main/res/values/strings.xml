@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FlowGo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- title-->
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="register_title">Register</string>
+    <string name="login_title">Login</string>
+
+    <!-- Label-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="btnRegister">Register</string>
+
+    <!-- Image Description-->
+    <string name="desc_splash">Company Logo</string>
+
+    <!-- Button-->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_login">Login</string>
+
+    <!--Message-->
+    <string name="main_message_notice">You have use </string>
+    <string name="main_message_notice_2">this period </string>
+    <!--Warning-->
+    <string name="message_warning_login_initial"> Please fill in the blank </string>
+    <string name ="message_warning_login_blank_username">Please fill in username </string>
+    <string name ="message_warning_login_blank_password">Please fill in password </string>
+    <string name ="message_warning_login_wrong_username">There is no such username </string>
+    <string name ="message_warning_login_wrong_password">Wrong Password</string>
+    <string name ="dummy_section_test">Test Only</string>
+</resources>

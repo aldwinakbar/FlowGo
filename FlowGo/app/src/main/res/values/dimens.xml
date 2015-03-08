@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">72dp</dimen>
+    <dimen name="activity_vertical_margin">72dp</dimen>
+    <dimen name="a_login_width">128dp</dimen>
+    <dimen name="a_login_margin_bottom">64dp</dimen>
+    <dimen name="cp_width">200dp</dimen>
+    <dimen name="cp_pallete_height">100dp</dimen>
+    <dimen name="w_topbar_height">96dp</dimen>
+    <dimen name="w_mainbar_height">80dp</dimen>
+    <dimen name="w_margintop_mainbar">56dp</dimen>
+    <dimen name="w_marginbottom_bottombar">0dp</dimen>
+    <dimen name="w_property_pane_width">200dp</dimen>
+    <dimen name="color_dialog_width">200dp</dimen>
+    <dimen name="d_options_width">230dp</dimen>
+    <dimen name="b_create_pane_width">200dp</dimen>
+    <dimen name="b_header_size">32dp</dimen>
+
+</resources>

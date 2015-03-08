@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_open"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/payment_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textSize = "24sp"
+        android:text="You must pay the bill within "/>
+
+    <TextView
+        android:id="@+id/payment_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="72sp"
+        android:text="15 days"/>
+
+    <TextView
+        android:id="@+id/payment_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_usage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop = "48dp"
+        android:textSize="36sp"
+        android:text="the bill is Rp 267000"/>
+
+    <Button android:id="@+id/button_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_period"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop ="36dp"
+        android:textSize="36sp"
+        android:text = "Pembayaran"/>
+
+
+</RelativeLayout>

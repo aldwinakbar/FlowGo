@@ -5,9 +5,7 @@ Keeping track of water usage is an important thing. But in today's world with mu
 
 Keep your household budget under control while still focusing on daily activities without going through that pain with a simple device that is 
 
--Self powered
--Self rechargeable
--Reliable for monitoring your water usage 24/7
+| Self powered | Self rechargeable | Reliable for monitoring your water usage 24/7 |
 
 
 Its a microcontroller driven water flow sensor that is powered by battery. The battery its self is charged when water flows through it via a micro-hydro generator.
@@ -16,9 +14,7 @@ With this, you can find out how much you will be charge for water this month, ev
 
 
 Parts Needed :
--Microcontroller working in 3.3V 
--Micro-hydro Generator
--Water Flow Sensor G1/2
--GSM Module
+
+| Microcontroller working in 3.3V | Micro-hydro Generator | Water Flow Sensor G1/2 | GSM Module |
 
 We are T-Bot-PRJ consisting of 5 people who want to make a difference in the country and the world.

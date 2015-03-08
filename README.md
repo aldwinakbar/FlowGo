@@ -19,6 +19,8 @@ We are T-Bot-PRJ consisting of 5 people who want to make a difference in the cou
 
 
 Folder directory:
-/flowgo-arduino			: Source code for the arduino.
-/FlowGo				: Source code for the android app
-/flowgo-server		: Source code for the server
+
+					
+ | /flowgo-arduino			: Source code for the arduino. 		|  
+ | /FlowGo				: Source code for the android app 	| 
+ | /flowgo-server			: Source code for the server		|

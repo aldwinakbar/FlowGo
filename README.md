@@ -15,7 +15,7 @@ Its a microcontroller driven water flow sensor that is powered by battery. The b
 With this, you can find out how much you will be charge for water this month, even though you're on a business trip to France. The device will simply let you know via text message when you ask. 
 
 
-Parts Needed:
+Parts Needed :
 -Microcontroller working in 3.3V 
 -Micro-hydro Generator
 -Water Flow Sensor G1/2
